@@ -1,0 +1,23 @@
+@import "compass/css3";
+$disabledOpacity: .4;
+
+/* Button Default */
+$btnBgColor: linear-gradient(#f3f3f3, #e9e9e9);
+$btnHoverBgColor: linear-gradient(#f8f8f8, #f0f0f0);
+$btnActiveBgColor: linear-gradient(#dadada, #ebebeb);
+$btnBorderColor: #999;
+$btnTextColor: #181818;
+
+/* Button Primary */
+$btnPrimaryBgColor: linear-gradient(#4eb23a, #359921);
+$btnPrimaryHoverBgColor: linear-gradient(#57c840, #3eaf27);
+$btnPrimaryActiveBgColor: linear-gradient(#359920,#4eb23a);
+$btnPrimaryBorderColor: #2c8e00;
+$btnPrimaryTextColor: #fff;
+
+/* Button Danger */
+$btnDangerBgColor: linear-gradient(rgb(227, 33, 25), rgb(201, 4, 0));
+$btnDangerHoverBgColor: linear-gradient(rgb(245, 29, 17), rgb(220, 0, 0));
+$btnDangerActiveBgColor: linear-gradient(rgb(177, 5, 0), rgb(203, 33, 27));
+$btnDangerBorderColor: #720403;
+$btnDangerTextColor: #fff;
