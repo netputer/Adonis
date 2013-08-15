@@ -10,7 +10,7 @@
 
     border: 1px $btnBorderColor solid;
     color: $btnTextColor;
-    cursor: default;
+    cursor: pointer;
     height: 26px;
     min-width: 60px;
     padding: 3px 10px;
@@ -37,7 +37,7 @@
     }
 
 
-    &.btn-primary {
+    &.w-btn-primary {
         @include background-image($btnPrimaryBgColor);
         @include single-box-shadow(#72c261, 0, 1px, 0, false, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
@@ -65,7 +65,7 @@
         }
     }
 
-    &.btn-danger {
+    &.w-btn-danger {
         @include background-image($btnDangerBgColor);
         @include single-box-shadow(rgba(255, 255, 255, .2), 0, 1px, 0, false, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
@@ -88,19 +88,19 @@
         }
     }
 
-    &.btn-mini {
+    &.w-btn-mini {
         height: 24px;
         padding: 2px 10px;
     }
 
-    &.btn-large {
+    &.w-btn-large {
         font-size: 14px;
         height: 32px;
         line-height: 18px;
         padding: 6px 15px;
     }
 
-    &.btn-grand {
+    &.w-btn-grand {
         font-size: 14px;
         height: 38px;
         line-height: 18px;
@@ -108,8 +108,12 @@
         min-width: 80px;
     }
 
-    &.btn-block {
+    &.w-btn-block {
         display: block;
         width: 100%;
+    }
+
+    + .w-btn {
+        margin-left: 4px;
     }
 }
