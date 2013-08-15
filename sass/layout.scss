@@ -1,0 +1,10 @@
+@import "compass/css3";
+*,
+*:before,
+*:after {
+    @include box-sizing('border-box');
+}
+
+p {
+    margin: 0 0 10px;
+}
