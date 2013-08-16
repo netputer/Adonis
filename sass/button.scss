@@ -19,12 +19,14 @@
     &:hover,
     &.hover {
         @include background-image($btnHoverBgColor);
+
         color: #000;
     }
 
     &:active,
     &.active {
         @include background-image($btnActiveBgColor);
+
         color: #000;
     }
 
@@ -32,6 +34,7 @@
     &:disabled,
     &.disabled {
         @include background-image($btnBgColor);
+
         color: $btnTextColor;
         opacity: $disabledOpacity;
     }
@@ -41,6 +44,7 @@
         @include background-image($btnPrimaryBgColor);
         @include single-box-shadow(#72c261, 0, 1px, 0, false, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
+
         border-color: $btnPrimaryBorderColor;
         color: $btnPrimaryTextColor;
 
@@ -61,6 +65,7 @@
         &.disabled {
             @include background-image($btnPrimaryBgColor);
             @include single-box-shadow(#72c261, 0, 1px, 0, false, true);
+
             color: $btnPrimaryTextColor;
         }
     }
@@ -69,6 +74,7 @@
         @include background-image($btnDangerBgColor);
         @include single-box-shadow(rgba(255, 255, 255, .2), 0, 1px, 0, false, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
+
         border-color: $btnDangerBorderColor;
         color: $btnDangerTextColor;
 
