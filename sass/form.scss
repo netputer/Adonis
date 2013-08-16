@@ -1,0 +1,63 @@
+@import "standardColors";
+@import "compass/css3";
+label {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+    @include border-radius(3px);
+    @include box-shadow(0 1px 0 #fff, 0 1px 3px rgba(0, 0, 0, .05) inset);
+    @include box-sizing('border-box');
+    @include transition-duration(.2s, .2s, .2s);
+    @include transition-property(border, box-shadow, height);
+    @include transition-timing-function(linear, linear, linear);
+
+    border: 1px $componentBorderColor solid;
+    display: block;
+    font-size: 14px;
+    line-height: 1.428571429;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    resize: none;
+    vertical-align: middle;
+
+    &:hover {
+        border-color: rgba($standardColor, .5);
+    }
+
+    &:focus,
+    &:focus:hover {
+        @include box-shadow(0 1px 0 #fff, 0 0 3px rgba($standardColor, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
+
+        border-color: $standardColor;
+        outline: 0;
+    }
+
+    &:disabled,
+    .disabled {
+        background-color: #eee;
+        border-color: $componentBorderColor;
+    }
+
+    &.w-input-block {
+        width: 100%;
+    }
+}

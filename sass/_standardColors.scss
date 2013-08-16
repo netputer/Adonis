@@ -1,5 +1,5 @@
-@import "compass/css3";
 $disabledOpacity: .4;
+$standardColor: rgb(59, 170, 36);
 
 /* Button Default */
 $btnBgColor: linear-gradient(#f3f3f3, #e9e9e9);
@@ -21,3 +21,14 @@ $btnDangerHoverBgColor: linear-gradient(rgb(245, 29, 17), rgb(220, 0, 0));
 $btnDangerActiveBgColor: linear-gradient(rgb(177, 5, 0), rgb(203, 33, 27));
 $btnDangerBorderColor: #720403;
 $btnDangerTextColor: #fff;
+
+/* Text colors */
+$textNormal: #333;
+$textPrimary: $standardColor;
+$textSecondary: #555;
+$textInfo: #999;
+$textHighlight: #b53d01;
+$textActive: rgb(47, 124, 47);
+
+/** Border Colors */
+$componentBorderColor: #cacaca;

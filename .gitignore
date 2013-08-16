@@ -3,4 +3,6 @@
 *.DS_store
 
 /.sass-cache/
-/stylesheets/
+/dist/
+/node_modules/
+/bower_components/
