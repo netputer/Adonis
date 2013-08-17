@@ -2,33 +2,43 @@ $disabledOpacity: .4;
 $standardColor: rgb(59, 170, 36);
 
 /* Button Default */
-$btnBgColor: linear-gradient(#f3f3f3, #e9e9e9);
-$btnHoverBgColor: linear-gradient(#f8f8f8, #f0f0f0);
-$btnActiveBgColor: linear-gradient(#dadada, #ebebeb);
+$btnBgColorFrom: #f3f3f3;
+$btnBgColorTo: #e9e9e9;
+$btnHoverBgColorFrom: #f8f8f8;
+$btnHoverBgColorTo: #f0f0f0;
+$btnActiveBgColorFrom: #dadada;
+$btnActiveBgColorTo: #ebebeb;
 $btnBorderColor: #999;
 $btnTextColor: #181818;
 
 /* Button Primary */
-$btnPrimaryBgColor: linear-gradient(#4eb23a, #359921);
-$btnPrimaryHoverBgColor: linear-gradient(#57c840, #3eaf27);
-$btnPrimaryActiveBgColor: linear-gradient(#359920,#4eb23a);
+$btnPrimaryBgColorFrom: #4eb23a;
+$btnPrimaryBgColorTo: #359921;
+$btnPrimaryHoverBgColorFrom: #57c840;
+$btnPrimaryHoverBgColorTo: #3eaf27;
+$btnPrimaryActiveBgColorFrom: #359920;
+$btnPrimaryActiveBgColorTo: #4eb23a;
 $btnPrimaryBorderColor: #2c8e00;
 $btnPrimaryTextColor: #fff;
 
 /* Button Danger */
-$btnDangerBgColor: linear-gradient(rgb(227, 33, 25), rgb(201, 4, 0));
-$btnDangerHoverBgColor: linear-gradient(rgb(245, 29, 17), rgb(220, 0, 0));
-$btnDangerActiveBgColor: linear-gradient(rgb(177, 5, 0), rgb(203, 33, 27));
+$btnDangerBgColorFrom: rgb(227, 33, 25);
+$btnDangerBgColorTo: rgb(201, 4, 0);
+$btnDangerHoverBgColorFrom: rgb(245, 29, 17);
+$btnDangerHoverBgColorTo: rgb(220, 0, 0);
+$btnDangerActiveBgColorFrom: rgb(177, 5, 0);
+$btnDangerActiveBgColorTo: rgb(203, 33, 27);
 $btnDangerBorderColor: #720403;
 $btnDangerTextColor: #fff;
 
 /* Text colors */
 $textNormal: #333;
-$textPrimary: $standardColor;
+$textPrimary: #2f7c2f;
 $textSecondary: #555;
 $textInfo: #999;
 $textHighlight: #b53d01;
-$textActive: rgb(47, 124, 47);
+$textHover: $standardColor;
+$textActive: #2f7c2f;
 
 /** Border Colors */
 $componentBorderColor: #cacaca;
