@@ -15,12 +15,16 @@ textarea {
 
 a,
 .link {
-    color: $standardColor;
+    @include transition-duration(.2s);
+    @include transition-property(color);
+
+    color: $textPrimary;
     cursor: pointer;
     text-decoration: none;
 
     &:hover,
     &:focus {
+        color: $textHover;
         text-decoration: underline;
     }
 
