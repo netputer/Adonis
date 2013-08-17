@@ -16,6 +16,14 @@
             this.document.write('<script src=\"http://localhost:35729/livereload.js?snipver=1\"><\/script>');
         </script>
         <!-- endbuild -->
+        <style type="text/css">
+        .smaples {
+            background-color: #eee;
+            border: #cacaca 1px dotted;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        </style>
     </head>
     <body>
         <div class="w-container">
@@ -30,73 +38,85 @@
                 <div class="w-col-xs-12 w-col-sm-9 w-col-md-8">
                     <h2 id="nav-typo">Typography</h2>
                     <h3>Headings</h2>
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
+                    <div class="smaples w-container">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
                     <h3>Text Colors</h2>
-                    <h5 class="w-text-normal">Normal Text</h5>
-                    <h5 class="w-text-primary">Primary Text</h5>
-                    <h5 class="w-text-secondary">Secondary Text</h5>
-                    <h5 class="w-text-info">Info Text</h5>
-                    <h5 class="w-text-warning">Warning Text</h5>
+                    <div class="smaples w-container">
+                        <h5 class="w-text-normal">Normal Text</h5>
+                        <h5 class="w-text-primary">Primary Text</h5>
+                        <h5 class="w-text-secondary">Secondary Text</h5>
+                        <h5 class="w-text-info">Info Text</h5>
+                        <h5 class="w-text-warning">Warning Text</h5>
+                    </div>
                     <h3>Link</h3>
-                    <p><span class="link">Link</span></p>
+                    <div class="smaples w-container">
+                        <span class="link">Link</span>
+                    </div>
                     <h2 id="nav-buttons">Buttons</h2>
                     <h3>Button Options</h3>
-                    <div class="w-row">
-                        <div class="w-col-xs-4"><button class="w-btn">Button</button></div>
-                        <div class="w-col-xs-4"><button class="w-btn w-btn-primary">Main Button</button></div>
-                        <div class="w-col-xs-4"><button class="w-btn w-btn-danger">Danger Button</button></div>
+                    <div class="smaples w-container">
+                        <button class="w-btn">Button</button>
+                        <button class="w-btn w-btn-primary">Main Button</button>
+                        <button class="w-btn w-btn-danger">Danger Button</button>
                     </div>
                     <h3>Button Sizes</h3>
-                    <p>
-                        <button class="w-btn w-btn-grand">Grand Button</button>
-                        <button class="w-btn w-btn-grand w-btn-pramiry">Grand Button</button>
-                        <button class="w-btn w-btn-grand w-btn-danger">Grand Button</button>
-                    </p>
-                    <p>
-                        <button class="w-btn w-btn-large">Large Button</button>
-                        <button class="w-btn w-btn-large w-btn-pramiry">Large Button</button>
-                        <button class="w-btn w-btn-large w-btn-danger">Large Button</button>
-                    </p>
-                    <p>
-                        <button class="w-btn">Normal Button</button>
-                        <button class="w-btn w-btn-pramiry">Normal Button</button>
-                        <button class="w-btn w-btn-danger">Normal Button</button>
-                    </p>
-                    <p>
-                        <button class="w-btn w-btn-mini">Mini Button</button>
-                        <button class="w-btn w-btn-mini w-btn-pramiry">Mini Button</button>
-                        <button class="w-btn w-btn-mini w-btn-danger">Mini Button</button>
-                    </p>
-                    <p><button class="w-btn w-btn-primary w-btn-grand w-btn-block">Block Button</button></p>
+                    <div class="smaples w-container">
+                        <p>
+                            <button class="w-btn w-btn-grand">Grand Button</button>
+                            <button class="w-btn w-btn-grand w-btn-pramiry">Grand Button</button>
+                            <button class="w-btn w-btn-grand w-btn-danger">Grand Button</button>
+                        </p>
+                        <p>
+                            <button class="w-btn w-btn-large">Large Button</button>
+                            <button class="w-btn w-btn-large w-btn-pramiry">Large Button</button>
+                            <button class="w-btn w-btn-large w-btn-danger">Large Button</button>
+                        </p>
+                        <p>
+                            <button class="w-btn">Normal Button</button>
+                            <button class="w-btn w-btn-pramiry">Normal Button</button>
+                            <button class="w-btn w-btn-danger">Normal Button</button>
+                        </p>
+                        <p>
+                            <button class="w-btn w-btn-mini">Mini Button</button>
+                            <button class="w-btn w-btn-mini w-btn-pramiry">Mini Button</button>
+                            <button class="w-btn w-btn-mini w-btn-danger">Mini Button</button>
+                        </p>
+                        <p><button class="w-btn w-btn-primary w-btn-grand w-btn-block">Block Button</button></p>
+                    </div>
                     <h3>Button States</h3>
-                    <p>
-                        <button class="w-btn">Normal Button</button>
-                        <button class="w-btn hover">Hover Button</button>
-                        <button class="w-btn active">Active Button</button>
-                        <button class="w-btn" disabled>Disabled Button</button>
-                    </p>
-                    <p>
-                        <button class="w-btn w-btn-primary">Normal Button</button>
-                        <button class="w-btn w-btn-primary hover">Hover Button</button>
-                        <button class="w-btn w-btn-primary active">Active Button</button>
-                        <button class="w-btn w-btn-primary" disabled>Disabled Button</button>
-                    </p>
-                    <p>
-                        <button class="w-btn w-btn-danger">Normal Button</button>
-                        <button class="w-btn w-btn-danger hover">Hover Button</button>
-                        <button class="w-btn w-btn-danger active">Active Button</button>
-                        <button class="w-btn w-btn-danger" disabled>Disabled Button</button>
-                    </p>
+                    <div class="smaples w-container">
+                        <p>
+                            <button class="w-btn">Normal Button</button>
+                            <button class="w-btn hover">Hover Button</button>
+                            <button class="w-btn active">Active Button</button>
+                            <button class="w-btn" disabled>Disabled Button</button>
+                        </p>
+                        <p>
+                            <button class="w-btn w-btn-primary">Normal Button</button>
+                            <button class="w-btn w-btn-primary hover">Hover Button</button>
+                            <button class="w-btn w-btn-primary active">Active Button</button>
+                            <button class="w-btn w-btn-primary" disabled>Disabled Button</button>
+                        </p>
+                        <p>
+                            <button class="w-btn w-btn-danger">Normal Button</button>
+                            <button class="w-btn w-btn-danger hover">Hover Button</button>
+                            <button class="w-btn w-btn-danger active">Active Button</button>
+                            <button class="w-btn w-btn-danger" disabled>Disabled Button</button>
+                        </p>
+                    </div>
                     <h2 id="nav-form">Form Elements</h2>
                     <h3>Text Input</h3>
-                    <p><input type="text" placeholder="Normal Input" /></p>
-                    <p><input type="text" placeholder="Disabled Input" disabled /></p>
-                    <p><input type="text" class="w-input-block" placeholder="Block Input" /></p>
+                    <div class="smaples w-container">
+                        <p><input type="text" placeholder="Normal Input" /></p>
+                        <p><input type="text" placeholder="Disabled Input" disabled /></p>
+                        <p><input type="text" class="w-input-block" placeholder="Block Input" /></p>
+                    </div>
                 </div>
             </div>
         </div>
