@@ -53,6 +53,10 @@ input[type="color"] {
     &.w-input-block {
         width: 100%;
     }
+
+    &.w-input-large {
+        height: 34px;
+    }
 }
 
 legend {
