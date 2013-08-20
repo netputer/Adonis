@@ -4,6 +4,15 @@
         <title>Wandou Labs UI Components Guide Line</title>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <link rel="stylesheet" type="text/css" href="dist/adonis.css" />
+        <!--[if IE 6]>
+        <link rel="stylesheet" href="dist/ie.css">
+        <![endif]-->
+        <!--[if IE 7]>
+        <link rel="stylesheet" href="dist/ie.css">
+        <![endif]-->
+        <!--[if IE 8]>
+        <link rel="stylesheet" href="dist/ie.css">
+        <![endif]-->
         <!-- build:js javascripts/SnapPeaLoader.js -->
         <script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -64,22 +73,22 @@
                     <div class="smaples w-container">
                         <p>
                             <button class="w-btn w-btn-grand">Grand Button</button>
-                            <button class="w-btn w-btn-grand w-btn-pramiry">Grand Button</button>
+                            <button class="w-btn w-btn-grand w-btn-primary">Grand Button</button>
                             <button class="w-btn w-btn-grand w-btn-danger">Grand Button</button>
                         </p>
                         <p>
                             <button class="w-btn w-btn-large">Large Button</button>
-                            <button class="w-btn w-btn-large w-btn-pramiry">Large Button</button>
+                            <button class="w-btn w-btn-large w-btn-primary">Large Button</button>
                             <button class="w-btn w-btn-large w-btn-danger">Large Button</button>
                         </p>
                         <p>
                             <button class="w-btn">Normal Button</button>
-                            <button class="w-btn w-btn-pramiry">Normal Button</button>
+                            <button class="w-btn w-btn-primary">Normal Button</button>
                             <button class="w-btn w-btn-danger">Normal Button</button>
                         </p>
                         <p>
                             <button class="w-btn w-btn-mini">Mini Button</button>
-                            <button class="w-btn w-btn-mini w-btn-pramiry">Mini Button</button>
+                            <button class="w-btn w-btn-mini w-btn-primary">Mini Button</button>
                             <button class="w-btn w-btn-mini w-btn-danger">Mini Button</button>
                         </p>
                         <p><button class="w-btn w-btn-primary w-btn-grand w-btn-block">Block Button</button></p>
@@ -111,6 +120,11 @@
                         <p><input type="text" placeholder="Normal Input" /></p>
                         <p><input type="text" placeholder="Disabled Input" disabled /></p>
                         <p><input type="text" class="w-input-block" placeholder="Block Input" /></p>
+                        <p><input type="text" class="w-input-large" placeholder="Large Input" /></p>
+                    </div>
+                    <h3>Form Inline</h3>
+                    <div class="smaples w-container">
+                        <div class="w-form-inline w-control-group"><input class="w-input-large" type="text" placeholder="Normal Input" /><button class="w-btn w-btn-large">Button</button></div>
                     </div>
                 </div>
             </div>
