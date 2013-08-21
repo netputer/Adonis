@@ -20,7 +20,7 @@
     &:hover,
     &.hover {
         @include background-image(linear-gradient($btnHoverBgColorFrom, $btnHoverBgColorTo));
-        @include filter-gradient($btnHoverBgColorFrom, $btnHoverBgColorFrom);
+        @include filter-gradient($btnHoverBgColorFrom, $btnHoverBgColorTo);
 
         color: #000;
     }
@@ -32,7 +32,6 @@
 
         color: #000;
     }
-
 
     &:disabled,
     &.disabled {

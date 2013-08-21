@@ -1,5 +1,6 @@
 @import "standardColors";
 @import "compass/css3";
+
 select,
 textarea,
 input[type="text"],
@@ -56,6 +57,14 @@ input[type="color"] {
 
     &.w-input-large {
         height: 34px;
+    }
+
+    &.w-input-danger {
+        &:focus,
+        &.focus {
+            @include box-shadow(0 1px 0 #fff, 0 0 3px rgba($textHighlight, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
+            border-color: $textHighlight;
+        }
     }
 }
 
