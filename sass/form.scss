@@ -92,14 +92,17 @@ fieldset {
 }
 
 .w-form-inline {
+    label,
     input {
         @include inline-block();
 
         margin-bottom: 0;
     }
 
+    label,
     input,
     button {
+        + label,
         + input,
         + button {
             margin-left: 4px;
