@@ -1,5 +1,7 @@
 @import "standardColors";
 @import "compass/css3";
+@import "mixins";
+
 select,
 textarea,
 input[type="text"],
@@ -83,14 +85,17 @@ fieldset {
 }
 
 .w-form-inline {
-    input {
+    input,
+    button,
+    label {
         @include inline-block();
 
         margin-bottom: 0;
     }
 
     input,
-    button {
+    button,
+    label {
         + input,
         + button {
             margin-left: 4px;
