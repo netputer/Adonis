@@ -14,3 +14,38 @@ menu {
 p {
     margin: 0 0 10px;
 }
+
+.w-cf {
+    display: block;
+
+    &:after {
+        content: '.';
+        clear: both;
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+.w-hbox,
+.w-vbox {
+    display: -webkit-box;
+    -webkit-box: {
+        align: stretch;
+        direction: normal;
+        orient: horizontal;
+        pack: start;
+    }
+}
+
+.w-hbox {
+    -webkit-box-orient: horizontal;
+}
+
+.w-vbox {
+    -webkit-box-orient: vertical;
+}
+
+.w-box-reverse {
+    -webkit-box-direction: reverse;
+}
