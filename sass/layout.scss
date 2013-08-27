@@ -27,6 +27,14 @@ p {
     }
 }
 
+.w-wc {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
 .w-hbox,
 .w-vbox {
     display: -webkit-box;
