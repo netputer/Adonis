@@ -12,7 +12,7 @@
     border: 1px $btnBorderColor solid;
     color: $btnTextColor;
     cursor: pointer;
-    height: 26px;
+    height: 30px;
     min-width: 60px;
     padding: 3px 10px;
     text-decoration: none;
@@ -124,6 +124,14 @@
         line-height: 18px;
         padding: 9px 15px;
         min-width: 80px;
+    }
+
+    &.w-btn-kaiju {
+        font-size: 16px;
+        height: 42px;
+        line-height: 18px;
+        padding: 9px 15px;
+        min-width: 85px;
     }
 
     &.w-btn-block {
