@@ -59,6 +59,10 @@ input[type="color"] {
         height: 34px;
     }
 
+    &.w-input-kaiju {
+        height: 42px;
+    }
+
     &.w-input-danger {
         &:focus,
         &.focus {
@@ -93,7 +97,8 @@ fieldset {
 
 .w-form-inline {
     label,
-    input {
+    input,
+    button {
         @include inline-block();
 
         margin-bottom: 0;
