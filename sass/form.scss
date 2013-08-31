@@ -23,6 +23,11 @@ input[type="color"] {
     @include transition-duration(.2s, .2s, .2s);
     @include transition-property(border, box-shadow, height);
     @include transition-timing-function(linear, linear, linear);
+    @include input-placeholder('&') {
+        color: $textInfo;
+        font-size: inherit;
+        line-height: 1.428571429;
+    };
 
     border: 1px $componentBorderColor solid;
     display: block;
@@ -60,6 +65,7 @@ input[type="color"] {
     }
 
     &.w-input-kaiju {
+        font-size: 16px;
         height: 42px;
     }
 
