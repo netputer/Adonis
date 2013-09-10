@@ -23,6 +23,11 @@ input[type="color"] {
     @include transition-duration(.2s, .2s, .2s);
     @include transition-property(border, box-shadow, height);
     @include transition-timing-function(linear, linear, linear);
+    @include input-placeholder('&') {
+        color: $textInfo;
+        font-size: inherit;
+        line-height: 1.428571429;
+    };
 
     border: 1px $componentBorderColor solid;
     display: block;
@@ -60,6 +65,7 @@ input[type="color"] {
     }
 
     &.w-input-kaiju {
+        font-size: 16px;
         height: 42px;
     }
 
@@ -75,7 +81,7 @@ input[type="color"] {
 legend {
     display: block;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -92,7 +98,7 @@ fieldset {
 }
 
 .w-control-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .w-form-inline {

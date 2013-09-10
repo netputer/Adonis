@@ -14,7 +14,8 @@
     cursor: pointer;
     height: 30px;
     min-width: 60px;
-    padding: 3px 10px;
+    padding: 5px 10px;
+    text-align: center;
     text-decoration: none;
     -webkit-user-select: none;
 
@@ -24,6 +25,7 @@
         @include filter-gradient($btnHoverBgColorFrom, $btnHoverBgColorTo);
 
         color: #000;
+        text-decoration: none;
     }
 
     &:active,
@@ -32,6 +34,7 @@
         @include filter-gradient($btnActiveBgColorFrom, $btnActiveBgColorTo);
 
         color: #000;
+        text-decoration: none;
     }
 
     &:disabled,
@@ -114,14 +117,12 @@
     &.w-btn-large {
         font-size: 14px;
         height: 34px;
-        line-height: 18px;
-        padding: 6px 15px;
+        padding: 7px 15px;
     }
 
     &.w-btn-grand {
         font-size: 14px;
         height: 38px;
-        line-height: 18px;
         padding: 9px 15px;
         min-width: 80px;
     }
@@ -129,8 +130,7 @@
     &.w-btn-kaiju {
         font-size: 16px;
         height: 42px;
-        line-height: 18px;
-        padding: 9px 15px;
+        padding: 11px 15px;
         min-width: 85px;
     }
 
@@ -141,5 +141,52 @@
 
     + .w-btn {
         margin-left: 4px;
+    }
+
+    &.w-btn-link {
+        @include background-image(none);
+        @include border-radius(3px);
+        @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
+        @include inline-block();
+        @include single-box-shadow(none);
+        @include single-text-shadow(none);
+        @include transition-duration(.2s);
+        @include transition-property(color);
+
+        background: none;
+        border: none;
+        color: $textPrimary;
+        padding: 6px 11px;
+
+        &:hover {
+            color: $textHover;
+            text-decoration: underline;
+        }
+
+        &:active {
+            color: $textActive;
+        }
+
+        &:focus {
+            outline: thin dotted #333;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px;
+        }
+
+        &.w-btn-mini {
+            padding: 3px 11px;
+        }
+
+        &.w-btn-large {
+            padding: 8px 16px;
+        }
+
+        &.w-btn-grand {
+            padding: 10px 16px;
+        }
+
+        &.w-btn-kaiju {
+            padding: 12px 16px;
+        }
     }
 }
