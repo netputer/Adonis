@@ -146,7 +146,7 @@
     &.w-btn-link {
         @include background-image(none);
         @include border-radius(3px);
-        @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
+        // @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
         @include inline-block();
         @include single-box-shadow(none);
         @include single-text-shadow(none);
@@ -156,10 +156,12 @@
         background: none;
         border: none;
         color: $textPrimary;
+        filter: none;
         padding: 6px 11px;
 
         &:hover {
             color: $textHover;
+            filter: none;
             text-decoration: underline;
         }
 
