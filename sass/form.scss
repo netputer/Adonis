@@ -23,7 +23,7 @@ input[type="color"] {
     @include transition-duration(.2s, .2s, .2s);
     @include transition-property(border, box-shadow, height);
     @include transition-timing-function(linear, linear, linear);
-    @include input-placeholder('&') {
+    @include input-placeholder() {
         color: $textInfo;
         font-size: inherit;
         line-height: 1.428571429;
