@@ -6,7 +6,7 @@
     @include border-radius(3px);
     @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
     @include inline-block();
-    @include single-box-shadow(0, 1px, 0, false, true, #fff);
+    @include single-box-shadow(0, 1px, 0, false, #fff, true);
     @include single-text-shadow(0, 1px, 0, false, #fff);
 
     border: 1px $btnBorderColor solid;
@@ -50,7 +50,7 @@
     &.w-btn-primary {
         @include background-image(linear-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo));
         @include filter-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo);
-        @include single-box-shadow(0, 1px, 0, false, true, #72c261);
+        @include single-box-shadow(0, 1px, 0, false, #72c261, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
 
         border-color: $btnPrimaryBorderColor;
@@ -60,14 +60,14 @@
         &.hover {
             @include background-image(linear-gradient($btnPrimaryHoverBgColorFrom, $btnPrimaryHoverBgColorTo));
             @include filter-gradient($btnPrimaryHoverBgColorFrom, $btnPrimaryHoverBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, true, #79d367);
+            @include single-box-shadow(0, 1px, 0, false, #79d367, true);
         }
 
         &:active,
         &.active {
             @include background-image(linear-gradient($btnPrimaryActiveBgColorFrom, $btnPrimaryActiveBgColorTo));
             @include filter-gradient($btnPrimaryActiveBgColorFrom, $btnPrimaryActiveBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, true, #72c261);
+            @include single-box-shadow(0, 1px, 0, false, #72c261, true);
         }
 
 
@@ -75,7 +75,7 @@
         &.disabled {
             @include background-image(linear-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo));
             @include filter-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, true, #72c261);
+            @include single-box-shadow(0, 1px, 0, false, #72c261, true);
 
             color: $btnPrimaryTextColor;
         }
@@ -84,7 +84,7 @@
     &.w-btn-danger {
         @include background-image(linear-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo));
         @include filter-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo);
-        @include single-box-shadow(0, 1px, 0, false, true, rgba(255, 255, 255, .2));
+        @include single-box-shadow(0, 1px, 0, false, rgba(255, 255, 255, .2), true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
 
         border-color: $btnDangerBorderColor;
