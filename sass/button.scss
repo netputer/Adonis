@@ -28,6 +28,11 @@
         text-decoration: none;
     }
 
+    &:focus,
+    &.focus {
+        outline: none;
+    }
+
     &:active,
     &.active {
         @include background-image(linear-gradient($btnActiveBgColorFrom, $btnActiveBgColorTo));
