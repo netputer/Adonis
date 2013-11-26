@@ -41,7 +41,7 @@ module.exports = function (grunt) {
                 sassDir : 'sass',
                 cssDir : '<%= paths.dist %>',
                 imagesDir : 'sass/sprites',
-                generatedImagesDir : '<%= paths.dist %>/images',
+                generatedImagesDir : 'images',
                 relativeAssets : true
             },
             dist : {
