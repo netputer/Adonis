@@ -153,7 +153,7 @@
         @include border-radius(3px);
         // @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
         @include inline-block();
-        @include single-box-shadow(none);
+        @include single-box-shadow(0, 0, 0);
         @include single-text-shadow(none);
         @include transition-duration(.2s);
         @include transition-property(color);
