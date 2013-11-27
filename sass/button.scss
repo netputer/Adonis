@@ -9,6 +9,7 @@
     @include single-box-shadow(0, 1px, 0, false, #fff, true);
     @include single-text-shadow(0, 1px, 0, false, #fff);
 
+    background-color: $btnBgColorFrom;
     border: 1px $btnBorderColor solid;
     color: $btnTextColor;
     cursor: pointer;
@@ -58,6 +59,7 @@
         @include single-box-shadow(0, 1px, 0, false, #72c261, true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
 
+        background-color: $btnPrimaryBgColorFrom;
         border-color: $btnPrimaryBorderColor;
         color: $btnPrimaryTextColor;
 
@@ -92,6 +94,7 @@
         @include single-box-shadow(0, 1px, 0, false, rgba(255, 255, 255, .2), true);
         @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
 
+        background-color: $btnDangerBgColorFrom;
         border-color: $btnDangerBorderColor;
         color: $btnDangerTextColor;
 
