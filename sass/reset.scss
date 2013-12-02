@@ -346,6 +346,7 @@ html input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box; /* 1 */
+    outline: none;
     padding: 0; /* 2 */
 }
 
