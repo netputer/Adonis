@@ -20,7 +20,7 @@ a,
     @include transition-duration(.2s);
     @include transition-property(color);
 
-    color: $textPrimary;
+    color: $textLink;
     cursor: pointer;
     text-decoration: none;
 
@@ -119,9 +119,20 @@ h4 small,
 .w-text-primary {
     color: $textPrimary;
 }
+.w-text-link {
+    color: $textLink;
+}
+
+.w-text-link {
+    color: $textLink;
+}
 
 .w-text-secondary {
     color: $textSecondary;
+}
+
+.w-text-thirdly {
+    color: $textThirdly;
 }
 
 .w-text-info {
