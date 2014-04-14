@@ -5,7 +5,6 @@
 deploy_cdn
 
 /.sass-cache/
-/dist/
 /images/
 /node_modules/
 /bower_components/
