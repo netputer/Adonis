@@ -6,7 +6,7 @@
 /* Form Elements */
 .w-input {
     @include border-radius(3px);
-    @include box-shadow(0 1px 0 #fff, 0 1px 3px rgba(0, 0, 0, .05) inset);
+    @include box-shadow(0 1px 3px rgba(0, 0, 0, .05) inset);
     @include box-sizing('border-box');
     @include transition-duration(.2s, .2s, .2s);
     @include transition-property(border, box-shadow, height);
@@ -14,7 +14,6 @@
     @include input-placeholder() {
         color: $textInfo;
         font-size: inherit;
-        line-height: 1.428571429;
     };
 
     border: 1px $componentBorderColor solid;
@@ -32,7 +31,7 @@
 
     &:focus,
     &:focus:hover {
-        @include box-shadow(0 1px 0 #fff, 0 0 3px rgba($standardColor, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
+        @include box-shadow(0 0 3px rgba($standardColor, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
 
         border-color: $standardColor;
         outline: 0;
@@ -60,7 +59,7 @@
     &.w-input-danger {
         &:focus,
         &.focus {
-            @include box-shadow(0 1px 0 #fff, 0 0 3px rgba($textHighlight, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
+            @include box-shadow(0 0 3px rgba($textHighlight, .6), 0 1px 3px rgba(0, 0, 0, .05) inset);
             border-color: $textHighlight;
         }
     }
