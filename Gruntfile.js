@@ -86,17 +86,6 @@ module.exports = function (grunt) {
                         'images/**/*.{webp,gif,png,jpg,jpeg,ttf,otf,svg}'
                     ]
                 }]
-            },
-            compass: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= paths.tmp %>',
-                    dest: '<%= paths.dist %>',
-                    src: [
-                        'images/**/*.{webp,gif,png,jpg,jpeg,ttf,otf,svg}'
-                    ]
-                }]
             }
         },
         compass: {
@@ -109,11 +98,9 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     cssDir: '<%= paths.dist %>/stylesheets',
-                    generatedImagesDir: '<%= paths.tmp %>/images',
-                    httpGeneratedImagesPath: '/images/',
+                    generatedImagesDir: '<%= paths.dist %>/images',
                     outputStyle: 'compressed',
-                    environment: 'production',
-                    relativeAssets: false
+                    environment: 'production'
                 }
             },
             server: {
@@ -164,11 +151,11 @@ module.exports = function (grunt) {
         },
         cdn: {
             options: {
-                cdn: 'http://change.this.to.cdn.path',
+                cdn: 'http://img.wdjimg.com/static-files/adonis',
                 flatten: true
             },
             dist: {
-                src: ['<%= paths.dist %>/**/*.html', '<%= paths.dist %>/**/*.css'],
+                src: ['<%= paths.dist %>/**/*.css'],
             }
         }
     });
@@ -183,24 +170,27 @@ module.exports = function (grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'concurrent:dist',
-        'concat',
-        'copy:compass',
         'imagemin'
     ]);
 
-    grunt.registerTask(['update'], [
+    grunt.registerTask('build:production', [
+        'build',
+        'cdn:dist'
+    ]);
+
+    grunt.registerTask('update', [
         'bump-only:patch',
         'changelog',
         'bump-commit'
     ]);
 
-    grunt.registerTask(['update:minor'], [
+    grunt.registerTask('update:minor', [
         'bump-only:minor',
         'changelog',
         'bump-commit'
     ]);
 
-    grunt.registerTask(['update:major'], [
+    grunt.registerTask('update:major', [
         'bump-only:major',
         'changelog',
         'bump-commit'
