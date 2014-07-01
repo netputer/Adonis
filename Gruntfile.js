@@ -15,8 +15,7 @@ module.exports = function (grunt) {
     var pathConfig = {
         app: 'app',
         dist: 'dist',
-        tmp: '.tmp',
-        test: 'test'
+        tmp: '.tmp'
     };
 
     grunt.initConfig({
@@ -25,13 +24,6 @@ module.exports = function (grunt) {
             compass: {
                 files: ['<%= paths.app %>/compass/**/*'],
                 tasks: ['compass:server']
-            },
-            test: {
-                files: ['<%= paths.app %>/javascripts/**/*.js'],
-                tasks: ['newer:jshint:test', 'karma:server:run'],
-                options: {
-                    spawn: false
-                }
             },
             livereload: {
                 files: [
@@ -79,33 +71,6 @@ module.exports = function (grunt) {
         clean: {
             dist: ['<%= paths.tmp %>', '<%= paths.dist %>'],
             server: '<%= paths.tmp %>'
-        },
-        useminPrepare: {
-            html: ['<%= paths.app %>/**/*.html'],
-            options: {
-                dest: '<%= paths.dist %>'
-            }
-        },
-        usemin: {
-            html: ['<%= paths.dist %>/**/*.html'],
-            css: ['<%= paths.dist %>/stylesheets/**/*.css'],
-            options: {
-                dirs: ['<%= paths.dist %>'],
-                assetsDirs: ['<%= paths.dist %>']
-            }
-        },
-        htmlmin: {
-            options: {
-                collapseWhitespace: true
-            },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.dist %>',
-                    src: ['**/*.html'],
-                    dest: '<%= paths.dist %>'
-                }]
-            }
         },
         copy: {
             dist: {
@@ -160,17 +125,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= paths.dist %>/javascripts/**/*.js',
-                        '<%= paths.dist %>/stylesheets/**/*.css',
-                        '<%= paths.dist %>/images/**/*.{webp,gif,png,jpg,jpeg,ttf,otf}'
-                    ]
-                }
-            }
-        },
         imagemin: {
             dist: {
                 files: [{
@@ -179,21 +133,6 @@ module.exports = function (grunt) {
                     src: '**/*.{png,jpg,jpeg}',
                     dest: '<%= paths.dist %>/images'
                 }]
-            }
-        },
-        requirejs: {
-            dist: {
-                options: {
-                    optimize: 'uglify',
-                    uglify: {
-                        toplevel: true,
-                        ascii_only: false,
-                        beautify: false
-                    },
-                    preserveLicenseComments: true,
-                    useStrict: false,
-                    wrap: true
-                }
             }
         },
         concurrent: {
@@ -208,41 +147,6 @@ module.exports = function (grunt) {
                 options: {
                     logConcurrentOutput: true
                 }
-            }
-        },
-        jshint: {
-            options: {
-                jshintrc: '.jshintrc'
-            },
-            test: ['<%= paths.app %>/javascripts/**/*.js']
-        },
-        karma: {
-            options: {
-                configFile: '<%= paths.test %>/karma.conf.js',
-                browsers: ['Chrome_without_security']
-            },
-            server: {
-                reporters: ['progress'],
-                background: true
-            },
-            test: {
-                reporters: ['progress', 'junit', 'coverage'],
-                preprocessors: {
-                    '<%= paths.app %>/javascripts/**/*.js' : 'coverage'
-                },
-                junitReporter: {
-                    outputFile: '<%= paths.test %>/output/test-results.xml'
-                },
-                coverageReporter: {
-                    type: 'html',
-                    dir: '<%= paths.test %>/output/coverage/'
-                },
-                singleRun: true
-            },
-            travis: {
-                browsers: ['PhantomJS'],
-                reporters: ['progress'],
-                singleRun: true
             }
         },
         bump: {
@@ -272,50 +176,16 @@ module.exports = function (grunt) {
     grunt.registerTask('serve', [
         'concurrent:server',
         'connect:server',
-        'karma:server',
         'open',
         'watch'
     ]);
 
-    grunt.registerTask('test', [
-        'jshint:test',
-        'karma:test'
-    ]);
-
-    grunt.registerTask('test:travis', [
-        'jshint:test',
-        'karma:travis'
-    ]);
-
-    grunt.registerTask('build:staging', [
+    grunt.registerTask('build', [
         'clean:dist',
         'concurrent:dist',
-        'useminPrepare',
         'concat',
-        'uglify',
-        // 'cssmin', // Uncomment this line if using none-sass style
-        // 'requirejs:dist', // Uncomment this line if using RequireJS in your project
-        'rev',
         'copy:compass',
-        'imagemin',
-        'usemin',
-        'htmlmin'
-    ]);
-
-    grunt.registerTask('build:production', [
-        'clean:dist',
-        'concurrent:dist',
-        'useminPrepare',
-        'concat',
-        'uglify',
-        // 'cssmin', // Uncomment this line if using none-sass style
-        // 'requirejs:dist', // Uncomment this line if using RequireJS in your project
-        'rev',
-        'copy:compass',
-        'imagemin',
-        'usemin',
-        'htmlmin',
-        'cdn:dist'
+        'imagemin'
     ]);
 
     grunt.registerTask(['update'], [
