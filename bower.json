@@ -1,6 +1,16 @@
 {
-  "name": "Adonis",
-  "version": "0.1.0",
+  "name": "adonis",
+  "version": "0.1.1",
+  "keywords": [
+    "adonis",
+    "wandoulabs",
+    "wandoujia",
+    "css",
+    "sass",
+    "front-end",
+    "framework",
+    "web"
+  ],
   "homepage": "https://github.com/wandoulabs/Adonis",
   "description": "General CSS definitions of UI components, implement based on VI Guide of Wandou Labs.",
   "main": "./dist/stylesheets/adonis.css",
@@ -8,7 +18,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "app",
+    "app/components",
     "test",
     "tests",
     "Gruntfile.js",

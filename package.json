@@ -4,7 +4,7 @@
     "type": "git",
     "url": "https://github.com/wandoulabs/Adonis.git"
   },
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "General CSS definitions of UI components, implement based on VI Guide of Wandou Labs.",
   "dependencies": {},
   "devDependencies": {
