@@ -18,7 +18,7 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "app",
+    "app/components",
     "test",
     "tests",
     "Gruntfile.js",
