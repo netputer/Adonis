@@ -1,10 +1,17 @@
 {
-    "name" : "WandouLabs-Adonis",
-    "version" : "0.0.1",
-    "dependencies" : {
-        "bootstrap" : "~3.0.0-rc.2"
-    },
-    "devDependencies" : {
-
-    }
+  "name": "Adonis",
+  "version": "0.0.1",
+  "homepage": "https://github.com/wandoulabs/Adonis",
+  "description": "General CSS definitions of UI components, implement based on VI Guide of Wandou Labs.",
+  "main": "./dist/stylesheets/adonis.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "package.json"
+  ]
 }

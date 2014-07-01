@@ -1,10 +1,10 @@
+*.DS_store
+*.log
 *.sublime-project
 *.sublime-workspace
-*.DS_store
 
-deploy_cdn
-
-/.sass-cache/
-/images/
 /node_modules/
-/bower_components/
+/app/components
+/test/output/
+/.sass-cache/
+/.tmp/
