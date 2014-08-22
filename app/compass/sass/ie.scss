@@ -1,5 +1,15 @@
+@import "standardColors";
+
 .w-btn {
     min-width: auto;
     overflow: visible;
-    width: 1;
+    zoom: normal;
+
+    &.w-btn-link {
+        zoom: normal;
+    }
+}
+
+a.w-btn:hover {
+    color: $btnTextColor;
 }
