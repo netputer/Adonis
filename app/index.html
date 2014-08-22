@@ -15,8 +15,12 @@
         <![endif]-->
 
         <style type="text/css">
+            .w-container {
+                max-width: 960px;
+            }
+
             .samples {
-                background-color: #eee;
+                background-color: #f8f8f8;
                 border: #cacaca 1px dotted;
                 border-radius: 5px;
                 padding: 10px;
@@ -37,14 +41,14 @@
     <body>
         <div class="w-container">
             <div class="w-row">
-                <div class="w-col-xs-12 w-col-sm-3 w-col-md-4">
+                <div class="w-col-xs-12 w-col-sm-2 w-col-md-3">
                     <nav>
                         <li><a href="#nav-buttons">Buttons</a></li>
                         <li><a href="#nav-typo">Typography</a></li>
                         <li><a href="#nav-form">Form</a></li>
                     </nav>
                 </div>
-                <div class="w-col-xs-12 w-col-sm-9 w-col-md-8">
+                <div class="w-col-xs-12 w-col-sm-10 w-col-md-9">
                     <h2 id="nav-typo">Typography</h2>
                     <h3>Headings</h2>
                     <div class="samples w-container">
@@ -65,17 +69,18 @@
                     </div>
                     <h3>Link</h3>
                     <div class="samples w-container">
-                        <span class="link h2">Link</span>
+                        <a class="h4">Anchor</a>
+                        <span class="link h4">Link</span>
                     </div>
                     <h2 id="nav-buttons">Buttons</h2>
                     <h3>Button Options</h3>
-                    <div class="samples w-container">
+                    <div class="samples-white w-container">
                         <button class="w-btn">Button</button>
                         <button class="w-btn w-btn-primary">Main Button</button>
                         <button class="w-btn w-btn-danger">Danger Button</button>
                     </div>
                     <h3>Button Sizes</h3>
-                    <div class="samples w-container">
+                    <div class="samples-white w-container">
                         <p>
                             <button class="w-btn w-btn-kaiju">Kaiju Button</button>
                             <button class="w-btn w-btn-kaiju w-btn-primary">Kaiju Button</button>
@@ -104,28 +109,31 @@
                         <p><button class="w-btn w-btn-primary w-btn-grand w-btn-block">Block Button</button></p>
                     </div>
                     <h3>Button States</h3>
-                    <div class="samples w-container">
+                    <div class="samples-white w-container">
                         <p>
                             <button class="w-btn">Normal Button</button>
                             <button class="w-btn hover">Hover Button</button>
                             <button class="w-btn active">Active Button</button>
                             <button class="w-btn" disabled>Disabled Button</button>
+                            <button class="w-btn disabled">Class Disabled Button</button>
                         </p>
                         <p>
                             <button class="w-btn w-btn-primary">Normal Button</button>
                             <button class="w-btn w-btn-primary hover">Hover Button</button>
                             <button class="w-btn w-btn-primary active">Active Button</button>
                             <button class="w-btn w-btn-primary" disabled>Disabled Button</button>
+                            <button class="w-btn w-btn-primary disabled">Class Disabled Button</button>
                         </p>
                         <p>
                             <button class="w-btn w-btn-danger">Normal Button</button>
                             <button class="w-btn w-btn-danger hover">Hover Button</button>
                             <button class="w-btn w-btn-danger active">Active Button</button>
                             <button class="w-btn w-btn-danger" disabled>Disabled Button</button>
+                            <button class="w-btn w-btn-danger disabled">Class Disabled Button</button>
                         </p>
                     </div>
                     <h3>Fake Button</h3>
-                    <div class="samples w-container">
+                    <div class="samples-white w-container">
                         <p>
                             <a class="w-btn w-btn-mini">Mini Button</a>
                             <a class="w-btn">Normal Button</a>
@@ -135,7 +143,7 @@
                         </p>
                     </div>
                     <h3>Link Button</h3>
-                    <div class="samples w-container">
+                    <div class="samples-white w-container">
                         <p>
                             <button class="w-btn w-btn-link w-btn-mini">Mini Button</button>
                             <button class="w-btn w-btn-link">Normal Button</a>
