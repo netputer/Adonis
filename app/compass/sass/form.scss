@@ -1,11 +1,9 @@
-@import "sprite/*.png";
-
 @import "standardColors";
 @import "compass/css3";
+@import "sprite/*.png";
 
 /* Form Elements */
 .w-input {
-    @include border-radius(3px);
     @include box-shadow(0 1px 3px rgba(0, 0, 0, .05) inset);
     @include box-sizing('border-box');
     @include transition-duration(.2s, .2s, .2s);
@@ -67,7 +65,6 @@
 
 .w-checkbox {
     @include appearance('none');
-    @include border-radius(2px);
     @include box-sizing('border-box');
     @include inline-block();
 
