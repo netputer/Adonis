@@ -25,33 +25,21 @@ $onlineGameVerticalActiveColor: #58ae19;
 $onlineGameVerticalDisabledColor: #b3da7c;
 
 /* Button Default */
-$btnBgColorFrom: #f3f3f3;
-$btnBgColorTo: #e9e9e9;
-$btnHoverBgColorFrom: #f8f8f8;
-$btnHoverBgColorTo: #f0f0f0;
-$btnActiveBgColorFrom: #dadada;
-$btnActiveBgColorTo: #ebebeb;
-$btnBorderColor: #999;
-$btnTextColor: #181818;
+$btnBgColor: #e3e6e6;
+$btnHoverBgColor: #edeff0;
+$btnActiveBgColor: #ddd;
+$btnTextColor: #333;
 
 /* Button Primary */
-$btnPrimaryBgColorFrom: #4eb23a;
-$btnPrimaryBgColorTo: #359921;
-$btnPrimaryHoverBgColorFrom: #57c840;
-$btnPrimaryHoverBgColorTo: #3eaf27;
-$btnPrimaryActiveBgColorFrom: #359920;
-$btnPrimaryActiveBgColorTo: #4eb23a;
-$btnPrimaryBorderColor: #2c8e00;
+$btnPrimaryBgColor: $standardColor;
+$btnPrimaryHoverBgColor: #62bb50;
+$btnPrimaryActiveBgColor: #2f7c2f;
 $btnPrimaryTextColor: #fff;
 
 /* Button Danger */
-$btnDangerBgColorFrom: rgb(227, 33, 25);
-$btnDangerBgColorTo: rgb(201, 4, 0);
-$btnDangerHoverBgColorFrom: rgb(245, 29, 17);
-$btnDangerHoverBgColorTo: rgb(220, 0, 0);
-$btnDangerActiveBgColorFrom: rgb(177, 5, 0);
-$btnDangerActiveBgColorTo: rgb(203, 33, 27);
-$btnDangerBorderColor: #720403;
+$btnDangerBgColor: #f24949;
+$btnDangerHoverBgColor: #dc0000;
+$btnDangerActiveBgColor: #b10500;
 $btnDangerTextColor: #fff;
 
 /* Text colors */

@@ -2,15 +2,12 @@
 @import "compass/css3";
 
 .w-btn {
-    @include background-image(linear-gradient($btnBgColorFrom, $btnBgColorTo));
-    @include border-radius(3px);
-    @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
     @include inline-block();
-    @include single-box-shadow(0, 1px, 0, false, #fff, true);
-    @include single-text-shadow(0, 1px, 0, false, #fff);
+    @include transition-duration(.2s);
+    @include transition-property(background-color);
 
-    background-color: $btnBgColorFrom;
-    border: 1px $btnBorderColor solid;
+    background-color: $btnBgColor;
+    border: 0;
     color: $btnTextColor;
     cursor: pointer;
     height: 30px;
@@ -22,10 +19,8 @@
 
     &:hover,
     &.hover {
-        @include background-image(linear-gradient($btnHoverBgColorFrom, $btnHoverBgColorTo));
-        @include filter-gradient($btnHoverBgColorFrom, $btnHoverBgColorTo);
-
-        color: #000;
+        background-color: $btnHoverBgColor;
+        color: inherit;
         text-decoration: none;
     }
 
@@ -36,84 +31,52 @@
 
     &:active,
     &.active {
-        @include background-image(linear-gradient($btnActiveBgColorFrom, $btnActiveBgColorTo));
-        @include filter-gradient($btnActiveBgColorFrom, $btnActiveBgColorTo);
-
-        color: #000;
-        text-decoration: none;
+        background-color: $btnActiveBgColor;
+        color: inherit;
     }
 
     &:disabled,
     &.disabled {
-        @include background-image(linear-gradient($btnBgColorFrom, $btnBgColorTo));
-        @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
-
-        color: $btnTextColor;
+        cursor: default;
         opacity: $disabledOpacity;
+        // @TODO: No hover, No active, Return normal
     }
 
-
     &.w-btn-primary {
-        @include background-image(linear-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo));
-        @include filter-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo);
-        @include single-box-shadow(0, 1px, 0, false, #72c261, true);
-        @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
-
-        background-color: $btnPrimaryBgColorFrom;
-        border-color: $btnPrimaryBorderColor;
+        background-color: $btnPrimaryBgColor;
         color: $btnPrimaryTextColor;
 
         &:hover,
         &.hover {
-            @include background-image(linear-gradient($btnPrimaryHoverBgColorFrom, $btnPrimaryHoverBgColorTo));
-            @include filter-gradient($btnPrimaryHoverBgColorFrom, $btnPrimaryHoverBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, #79d367, true);
+            background-color: $btnPrimaryHoverBgColor;
         }
 
         &:active,
         &.active {
-            @include background-image(linear-gradient($btnPrimaryActiveBgColorFrom, $btnPrimaryActiveBgColorTo));
-            @include filter-gradient($btnPrimaryActiveBgColorFrom, $btnPrimaryActiveBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, #72c261, true);
+            background-color: $btnPrimaryActiveBgColor;
         }
-
 
         &:disabled,
         &.disabled {
-            @include background-image(linear-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo));
-            @include filter-gradient($btnPrimaryBgColorFrom, $btnPrimaryBgColorTo);
-            @include single-box-shadow(0, 1px, 0, false, #72c261, true);
-
-            color: $btnPrimaryTextColor;
         }
     }
 
     &.w-btn-danger {
-        @include background-image(linear-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo));
-        @include filter-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo);
-        @include single-box-shadow(0, 1px, 0, false, rgba(255, 255, 255, .2), true);
-        @include single-text-shadow(0, 1px, 0, false, rgba(0, 0, 0, .2));
-
-        background-color: $btnDangerBgColorFrom;
-        border-color: $btnDangerBorderColor;
+        background-color: $btnDangerBgColor;
         color: $btnDangerTextColor;
 
         &:hover,
         &.hover {
-            @include background-image(linear-gradient($btnDangerHoverBgColorFrom, $btnDangerHoverBgColorTo));
-            @include filter-gradient($btnDangerHoverBgColorFrom, $btnDangerHoverBgColorTo);
+            background-color: $btnDangerHoverBgColor;
         }
 
         &:active,
         &.active {
-            @include background-image(linear-gradient($btnDangerActiveBgColorFrom, $btnDangerActiveBgColorTo));
-            @include filter-gradient($btnDangerActiveBgColorFrom, $btnDangerActiveBgColorTo);
+            background-color: $btnDangerActiveBgColor;
         }
 
         &:disabled,
         &.disabled {
-            @include background-image(linear-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo));
-            @include filter-gradient($btnDangerBgColorFrom, $btnDangerBgColorTo);
         }
     }
 
@@ -152,24 +115,16 @@
     }
 
     &.w-btn-link {
-        @include background-image(none);
-        @include border-radius(3px);
-        // @include filter-gradient($btnBgColorFrom, $btnBgColorTo);
         @include inline-block();
-        @include single-box-shadow(0, 0, 0);
-        @include single-text-shadow(none);
         @include transition-duration(.2s);
         @include transition-property(color);
 
         background: none;
-        border: none;
-        color: $textPrimary;
-        filter: none;
+        color: $textLink;
         padding: 6px 11px;
 
         &:hover {
             color: $textHover;
-            filter: none;
             text-decoration: underline;
         }
 
