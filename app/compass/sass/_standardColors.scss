@@ -1,5 +1,28 @@
-$disabledOpacity: .4;
-$standardColor: rgb(59, 170, 36);
+/* General Color */
+$standardColor: #3baa24;
+$standardActiveColor: #359a20;
+$standardDisabledColor: #b1dda9;
+$appVerticalColor: #4cc9b6;
+$appVerticalActiveColor: #44b6a5;
+$appVerticalDisabledColor: #70d4c5;
+$gameVerticalColor: #ffc145;
+$gameVerticalActiveColor: #e6af3e;
+$gameVerticalDisabledColor: #ffce70;
+$videoVerticalColor: #4c9be5;
+$videoVerticalActiveColor: #458ccf;
+$videoVerticalDisabledColor: #70afeb;
+$musicVerticalColor: #ff8e58;
+$musicVerticalActiveColor: #e68150;
+$musicVerticalDisabledColor: #ffa57c;
+$ebookVerticalColor: #c28765;
+$ebookVerticalActiveColor: #af7a5c;
+$ebookVerticalDisabledColor: #cf9f84;
+$wallpaperVerticalColor: #fe7472;
+$wallpaperVerticalActiveColor: #e56967;
+$wallpaperVerticalDisabledColor: #fe908f;
+$onlineGameVerticalColor: #81c124;
+$onlineGameVerticalActiveColor: #58ae19;
+$onlineGameVerticalDisabledColor: #b3da7c;
 
 /* Button Default */
 $btnBgColorFrom: #f3f3f3;
@@ -42,6 +65,9 @@ $textHighlight: #b53d01;
 $textHover: $standardColor;
 $textActive: #2f7c2f;
 
-/** Border Colors */
+/* Border Colors */
 $borderColor: #d6d6d3;
 $componentBorderColor: #cacaca;
+
+/* Others */
+$disabledOpacity: .5;
