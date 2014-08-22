@@ -75,6 +75,10 @@
     vertical-align: middle;
     width: 14px;
 
+    &::-ms-check {
+        display: none;
+    }
+
     &:enabled:hover {
         border-color: $standardColor;
     }
